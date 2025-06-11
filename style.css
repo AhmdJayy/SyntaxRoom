@@ -1,0 +1,181 @@
+/* RESET & GLOBAL */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f5f7fb; color: #333; }
+img { max-width: 100%; display: block; }
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px; height: 100vh; position: fixed; top: 0; left: 0;
+  background: #fff; border-right: 1px solid #ddd; padding: 20px; z-index: 1000;
+}
+.sidebar h1 { text-align: center; margin-bottom: 20px; font-size: 24px; }
+.syntax { color: #550ba5; font-weight: bold; }
+.room { color: #2626a4; font-weight: bold; }
+.nav { list-style: none; }
+.nav li { margin-bottom: 10px; }
+.nav a {
+  text-decoration: none; color: #333; padding: 10px; display: block;
+  border-radius: 6px; font-weight: 600;
+}
+.nav a:hover { background: #f0e6fa; }
+.nav .active a { background: #550ba5; color: white; }
+
+/* MAIN CONTENT */
+.main-content {
+  margin-left: 240px; padding: 40px; flex: 1;
+}
+
+/* HERO & HEADER */
+.hero-row, .myclass-header, .hero-header {
+  background: #550ba5; color: white; text-align: center;
+  padding: 60px 30px; border-radius: 12px; margin-bottom: 40px;
+  max-width: 1000px; margin-left: auto; margin-right: auto;
+}
+.hero-text { max-width: 700px; margin: auto; }
+.subheading { font-size: 16px; color: #d0d7f7; margin-bottom: 10px; text-transform: uppercase; }
+.hero h1, .myclass-header h1 { font-size: 32px; margin-bottom: 20px; }
+.highlight { color: #dbff5b; }
+.hero-desc { color: #e3f6f9; line-height: 3.9; }
+.cta-button {
+  background: #b6df44; color: #031f37; padding: 12px 24px;
+  border-radius: 6px; text-decoration: none; font-weight: bold;
+}
+.cta-button:hover { background: #a5c73c; }
+
+/* KELAS */
+  .kelas-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .kelas-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #550ba5;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .kelas-title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #dbff5b;
+    margin: 15px auto 0;
+  }
+  
+  .kelas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .kelas-card {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(85, 11, 165, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+  }
+  
+  .kelas-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(85, 11, 165, 0.2);
+  }
+  
+  .kelas-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 20px;
+    background: #f9f5ff;
+  }
+  
+  .card-content {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .kelas-card h4 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: #550ba5;
+  }
+  
+  .kelas-card p {
+    margin: 0 0 15px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .kelas-hover {
+    display: inline-block;
+    color: #550ba5;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  
+  .kelas-card:hover .kelas-hover {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+/* WARNA GRID */
+.deskripsi .section-title {
+  text-align: center; font-size: 28px; margin-bottom: 30px; color: #550ba5;
+}
+.warna-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+}
+.why-colored-card {
+  padding: 20px; border-radius: 10px; text-align: center; font-size: 14px;
+}
+.pink { background: #f8c4c4; } .yellow { background: #fcf4a3; }
+.green { background: #d3f8df; } .blue { background: #c8e6f9; }
+.cream { background: #f3e9e0; } .violet { background: #e5d5f7; }
+
+/* PROFIL */
+.profil-section { display: flex; justify-content: center; padding: 2rem; }
+.profil-card {
+  background: white; padding: 1.5rem; border-radius: 12px;
+  max-width: 800px;
+}
+
+.profil-info h2, .profil-info h3 { color: #333; margin-bottom: 0.25rem; }
+.profil-info p { color: #555; margin-bottom: 1rem; }
+
+/* MOTIVASI & AKTIVITAS */
+.motivation-section blockquote {
+  font-style: italic; margin: 1rem 2rem; border-left: 5px solid #36d1dc;
+  padding-left: 1rem; color: #444;
+}
+.activity-section ul {
+  list-style: disc; padding-left: 2rem; color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative; width: 100%; height: auto; border-bottom: 1px solid #ddd;
+    padding: 15px 10px; display: flex; flex-direction: column; align-items: center;
+  }
+  .nav {
+    display: flex; gap: 10px; flex-wrap: nowrap; overflow-x: auto;
+    padding: 10px 0; justify-content: center;
+  }
+  .main-content {
+    margin-left: 0; margin-top: 170px; padding: 20px;
+  }
+  .kelas-grid, .highlight-grid { flex-direction: column; align-items: center; }
+  .warna-grid { grid-template-columns: 1fr; }
+  .profil-card { flex-direction: column; align-items: center; text-align: center; }
+}
+
