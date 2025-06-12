@@ -18,39 +18,93 @@
   </div>
 
   <div class="main-content">
-    <div class="myclass-header">
+    <div class="profile-header">
       <p class="subheading">Selamat Datang,</p>
       <h1><span class="highlight">Profil</span> Pengguna</h1>
       <p class="hero-desc">Kenali perjalanan belajarmu dan tetap termotivasi untuk terus berkembang.</p>
     </div>
 
-    <section class="profil-section">
-      <div class="profil-card">
-        <div class="profil-info">
-          <h2>Nama Lengkap</h2>
-          <p>Zahra</p>
-          <h3>Email</h3>
-          <p>rara@gmail.com</p>
-          <h3>Minat Teknologi</h3>
-          <p>Frontend Development, UI/UX Design, dan Interaktivitas Web</p>
+    <section class="profile-section">
+      <div class="profile-card">
+        <div class="profile-main">
+          <div class="profile-photo">
+            <img src="profil.jpg" alt="Foto Profil Zahra">
+            <button class="edit-btn">Ubah Foto</button>
+          </div>
+          <div class="profile-bio">
+            <h2>Zahra</h2>
+            <div class="profile-email">rara@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="progress-section">
+          <h3 class="progress-title">Progress Belajar</h3>
+          <div class="progress-item">
+            <div class="progress-heading">
+              <span>HTML Dasar</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%; background-color: #E44F26;"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-heading">
+              <span>CSS Pemula</span>
+              <span>50%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 50%; background-color: #264DE4;"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-heading">
+              <span>JavaScript Dasar</span>
+              <span>25%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 25%; background-color: #F7DF1E;"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     
     <section class="motivation-section">
-      <h2>Motivasi Belajar</h2>
-      <blockquote>
-        “Setiap baris kode adalah langkah menuju masa depan yang lebih baik. Belajar hari ini, kuasai dunia esok.”
-      </blockquote>
+      <h2 class="section-title">Motivasi Belajar</h2>
+      <div class="motivation-card">
+        <blockquote>
+          "Setiap baris kode adalah langkah menuju masa depan yang lebih baik. Belajar hari ini, kuasai dunia esok."
+        </blockquote>
+        <div class="quote-author">- Zahra</div>
+      </div>
     </section>
 
     <section class="activity-section">
-      <h2>Aktivitas Lainnya</h2>
-      <ul>
-        <li>Gabung komunitas pembelajar web di Discord.</li>
-        <li>Ikuti tantangan coding mingguan.</li>
-        <li>Beri ulasan dan nilai kursus yang telah diselesaikan.</li>
-      </ul>
+      <h2 class="section-title">Aktivitas Terkini</h2>
+      <div class="activity-card">
+        <div class="activity-item">
+          <div class="activity-icon">👥</div>
+          <div class="activity-content">
+            <h4>Gabung Komunitas</h4>
+            <p>Bergabung dengan komunitas pembelajar web di Discord</p>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">💻</div>
+          <div class="activity-content">
+            <h4>Tantangan Coding</h4>
+            <p>Menyelesaikan tantangan coding mingguan</p>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">⭐</div>
+          <div class="activity-content">
+            <h4>Ulasan Kursus</h4>
+            <p>Memberi ulasan untuk kursus HTML Dasar</p>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </div>
