@@ -45,13 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// js dom
 if (document.title.includes("Profil")) {
-  const motivasiCard = document.querySelector(".motivation-card");
-
-  const btnTambah = document.createElement("button");
-  btnTambah.textContent = "+ Tambah Motivasi";
-  btnTambah.className = "tambah-motivasi-btn";
-  motivasiCard.appendChild(btnTambah);
+  const motivasiList = document.querySelector(".motivasi-list");
+  const btnTambah = document.querySelector(".tambah-motivasi-btn");
 
   const daftarMotivasi = [
     "Terus berlatih, terus bertumbuh!",
@@ -61,20 +58,20 @@ if (document.title.includes("Profil")) {
     "Konsisten adalah kunci kemajuan."
   ];
 
-  btnTambah.addEventListener("click", () => {
+  btnTambah.addEventListener("click", function () {
     if (daftarMotivasi.length === 0) {
-      btnTambah.disabled = true; // disable tombol
+      btnTambah.disabled = true;
       btnTambah.style.backgroundColor = "#ccc";
       btnTambah.style.cursor = "not-allowed";
       return;
     }
 
-    const random = Math.floor(Math.random() * daftarMotivasi.length);
-    const motivasiText = daftarMotivasi.splice(random, 1)[0];
+    const index = Math.floor(Math.random() * daftarMotivasi.length);
+    const teks = daftarMotivasi.splice(index, 1)[0];
 
-    const newMotivasi = document.createElement("p");
-    newMotivasi.textContent = "“" + motivasiText + "”";
-    newMotivasi.className = "motivasi-baru";
-    motivasiCard.appendChild(newMotivasi);
+    const paragraf = document.createElement("p");
+    paragraf.className = "motivasi-baru";
+    paragraf.textContent = "“" + teks + "”";
+    motivasiList.appendChild(paragraf);
   });
 }
