@@ -3,7 +3,7 @@
 body { font-family: 'Segoe UI', sans-serif; background: #f5f7fb; color: #333; }
 img { max-width: 100%; display: block; }
 
-/* SIDEBAR */
+/* SIDEBAR nav*/
 .sidebar {
   width: 220px; height: 100vh; position: fixed; top: 0; left: 0;
   background: #fff; border-right: 1px solid #ddd; padding: 20px; z-index: 1000;
@@ -25,7 +25,7 @@ img { max-width: 100%; display: block; }
   margin-left: 240px; padding: 40px; flex: 1;
 }
 
-/* HERO & HEADER */
+/* HERO & HEADER selamat datang */
 .hero-row, .myclass-header, .hero-header {
   background: #550ba5; color: white; text-align: center;
   padding: 60px 30px; border-radius: 12px; margin-bottom: 40px;
@@ -304,7 +304,7 @@ img { max-width: 100%; display: block; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* RESPONSIVE: LEBIH RAPI UNTUK MOBILE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
